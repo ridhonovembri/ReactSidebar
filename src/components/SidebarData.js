@@ -1,0 +1,61 @@
+import React from 'react';
+import * as FaIcons from 'react-icons/fa';
+import * as AiIcons from 'react-icons/ai';
+import * as IoIcons from 'react-icons/io';
+import * as RiIcons from 'react-icons/ri';
+
+export const SidebarData = [
+    {
+        title: 'Home',
+        path: '/',
+        icon: <AiIcons.AiFillHome />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Reports',
+        path: '/reports',
+        icon: <IoIcons.IoIosPaper />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Products',
+        path: '/products',
+        icon: <FaIcons.FaCartPlus />,
+        cName: 'nav-text'
+    },{
+        title: 'Teams',
+        path: '/teams',
+        icon: <IoIcons.IoMdPeople />,
+        iconClosed: <RiIcons.RiArrowDownSFill />,
+        iconOpened: <RiIcons.RiArrowDownSFill />,
+        cName: 'nav-text',
+        subNav: [
+            {
+                title: 'SubTeam1',
+                path: '/subteam1',
+                icon: <IoIcons.IoMdPersonAdd />,
+                cName: 'nav-text'
+            },
+            {
+                title: 'SubTeam2',
+                path: '/subteam2',
+                icon: <IoIcons.IoMdPeople />,
+                cName: 'nav-text'
+            }
+        ]
+    },
+    {
+        title: 'Messages',
+        path: '/messages',
+        icon: <FaIcons.FaEnvelopeOpenText />,
+        cName: 'nav-text'
+    },
+    {
+        title: 'Supports',
+        path: '/support',
+        icon: <IoIcons.IoMdHelpCircle />,
+        cName: 'nav-text'
+    },
+]
+
+export default SidebarData;
